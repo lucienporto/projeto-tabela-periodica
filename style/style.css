@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --title-font: 'Ubuntu', sans-serif;
+    --txt-font: Arial, Verdana, Helvetica, sans-serif;
+}
+
+body {
+    font-family: var(--txt-font);
+}
+
+h1 {
+    font-family: var(--title-font);
+    font-weight: bold;
+}
+
+header {
+    background-color: #065f8f;
+    background-image: linear-gradient(to bottom, #098cd2,#065f8f);
+    color: #fff;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+header h1 {
+    font-variant: small-caps;
+    padding-bottom: 20px;
+}
+
+td {
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.2em;
+    font-family: var(--title-font);
+}
+
+td > span {
+    font-size: 0.5em;
+}
+
+td.invisible {
+    background-color: transparent;
+}
