@@ -10,10 +10,15 @@
 :root {
     --title-font: 'Ubuntu', sans-serif;
     --txt-font: Arial, Verdana, Helvetica, sans-serif;
+
+    --color1: #098cd2;
+    --color2: #065f8f;
 }
 
 body {
     font-family: var(--txt-font);
+    font-size: 1em;
+    background: #989797 url('../images/school.jpg') center center repeat fixed;
 }
 
 h1 {
@@ -21,33 +26,153 @@ h1 {
     font-weight: bold;
 }
 
+strong {
+    color: var(--color2);
+}
+
+em {
+    text-decoration: underline;
+    font-style: italic;
+}
+
 header {
-    background-color: #065f8f;
     background-image: linear-gradient(to bottom, #098cd2,#065f8f);
     color: #fff;
     text-align: center;
     padding-top: 50px;
     padding-bottom: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.503);
 }
 
 header h1 {
     font-variant: small-caps;
     padding-bottom: 20px;
+    font-size: 3em;
+}
+
+main {
+    max-width: 85vw;
+    background-color: white;
+    margin: auto;
+    border-radius: 0px 0px 15px 15px;
+    margin-bottom: 20px;
+}
+
+main h1 {
+    padding: 20px;
+}
+
+main p {
+    padding: 20px;
+    padding-top: 0px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+main p a {
+    text-decoration: none;
+    color: var(--color1);
+    font-weight: bold;
+    padding: 2px 3px;
+}
+
+main p a:hover{
+    text-decoration: underline;
+    color: var(--color2);
+}
+
+article {
+    padding-bottom: 50px;
+}
+
+.container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+table {
+    margin: auto;
+}
+
+table.group2 {
+    margin-top: 50px;
 }
 
 td {
-    background-color: gray;
     padding: 10px;
     text-align: center;
-    vertical-align: middle;
     font-size: 1.2em;
     font-family: var(--title-font);
+    font-weight: bold;
 }
 
 td > span {
     font-size: 0.5em;
+    font-weight: normal;
 }
 
 td.invisible {
     background-color: transparent;
+}
+
+td.non-metal {
+    background-color: #3B56A6;
+    color: #fff;
+}
+
+td.alkali-metal {
+    background-color: #7B5BA7;
+    color: #fff;
+}
+
+td.alkaline-earth {
+    background-color: #F27EB2;
+    color: #fff;
+}
+
+.transition-metals {
+    background-color: #F58132;
+    color: #fff;
+}
+
+.other-metals {
+    background-color: #62d36f;
+    color: #fff;
+}
+
+td.halogens {
+    background-color: #6BC6EF;
+    color: #fff;
+}
+
+td.semimetals {
+    background-color: #1460CE;
+    color: #fff;
+}
+
+td.noble-gases {
+    background-color: #D4BA0E;
+    color: #fff;
+}
+
+td.unknown-properties {
+    background-color: #938587;
+    color: #fff;
+}
+
+.lanthanides {
+    background-color: #EE3432;
+    color: #fff;
+}
+
+.actinides {
+    background-color: #A62439;
+    color: #fff;
+}
+
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
 }
