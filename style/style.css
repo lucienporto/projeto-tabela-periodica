@@ -18,7 +18,7 @@
 body {
     font-family: var(--txt-font);
     font-size: 1em;
-    background: #989797 url('../images/school.jpg') center center repeat fixed;
+    background: #c0bfbf;
 }
 
 h1 {
@@ -88,6 +88,13 @@ article {
     margin-bottom: 20px;
 }
 
+iframe {
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin: auto;
+}
+
 table {
     margin: auto;
 }
@@ -102,6 +109,20 @@ td {
     font-size: 1.2em;
     font-family: var(--title-font);
     font-weight: bold;
+}
+
+td a {
+    text-decoration: none;
+    padding: 0px;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: var(--title-font);
+    color: #fff;
+}
+
+td a span {
+    font-size: 0.5em;
+    font-weight: normal;
 }
 
 td > span {
